@@ -17,5 +17,5 @@ markItUp! is not meant to be a “Full-Features-Out-of-the-Box”-editor. Instea
 [http://markitup.jaysalvat.com/examples/](http://markitup.jaysalvat.com/examples/)
 
 ## Modifications Log
-** author: ** Will Nielsen
-** email: ** will@nielsendigital.com
+**author:** Will Nielsen
+**email:** will@nielsendigital.com
