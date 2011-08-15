@@ -52,7 +52,7 @@ div div .markItUpHeader ul ul
 .markItUp .markItUpHeader ul li.markItUpDropMenu a
 {
     width:100px;
-    margin-right:10px;
+    margin-right:240px;
     padding-left:10px;
 }
 .markItUp .markItUpHeader ul li.markItUpDropMenu a
@@ -92,13 +92,11 @@ div div .markItUpHeader ul ul
 {
     background-image : url(/image/1/32/0/0/assets/images/icons/list-unordered.png);
 }
-.markItUp .markItUpHeader ul li.markItUpButton.markItUpButton5 {margin-right:90px;}
 .markItUp .markItUpButton5 a
 {
     background-image : url(/image/1/32/0/0/assets/images/icons/list-ordered.png);
 }
 
-.markItUp .markItUpHeader ul li.markItUpButton.markItUpButton6 {margin-left:120px;}
 .markItUp .markItUpButton6 a
 {
     background-image : url(/image/1/32/0/0/assets/images/icons/image.png);
