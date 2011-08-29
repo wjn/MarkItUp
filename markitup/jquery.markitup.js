@@ -249,14 +249,17 @@
 				} else {
 					string = string || selection;
 
-					var lines = selection.split(/\r?\n/), blocks = [];
-					for (var l=0; l < lines.length; l++) {
+					var lines = [string], blocks = [];
+					
+					if (multiline === true) {
+						lines = string.split(/\r?\n/);
+					}
+					
+					for (var l = 0; l < lines.length; l++) {
 						line = lines[l];
-						if ($.trim(line) == '') {
-							continue;
-						}
-						if (line.match(/ +$/)) {
-							blocks.push(openWith + line.replace(/ $/, '') + closeWith + ' ');
+						var trailingSpaces;
+						if (trailingSpaces = line.match(/ *$/)) {
+							blocks.push(openWith + line.replace(/ *$/g, '') + closeWith + trailingSpaces);
 						} else {
 							blocks.push(openWith + line + closeWith);
 						}
@@ -308,6 +311,7 @@
 							lines[i] = "";
 						}
 					}
+
 					string = { block:lines.join('\n')};
 					start = caretPosition;
 					len = string.block.length + (($.browser.opera) ? n-1 : 0);
